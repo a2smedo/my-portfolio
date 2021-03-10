@@ -1,0 +1,148 @@
+body {
+  
+  background-color: rgb(1, 1, 49);
+  color: rgb(172, 171, 171);
+  font-family: 'Roboto Slab', serif;
+}
+
+:root{
+  --mainColor: rgb(155, 154, 148);
+  --secondColor:rgb(134, 131, 131);
+}
+
+a {
+  color: var(--secondColor);
+}
+
+span {
+  font-size: 19px;
+}
+
+h1 {
+  font-size: 80px;
+  color: #fff;
+}
+
+.heading h2{
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: bold;
+  position: relative;
+}
+
+.heading h2::after{
+  content: "";
+  width: 230px;
+  height: 2px;
+  background-color: var(--mainColor);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+}
+
+
+.hr {
+  width: 20%;
+  height: 2px;
+  background-color: var(--mainColor);
+}
+
+/* start nav */
+
+#main-nav{
+  background-color: #1c416b !important;
+}
+
+/* Start Home */
+
+.home {
+  background-image: url(../images/computer.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+.home-heading {
+  background-color: rgba(0, 0, 0, 0.287);
+}
+
+.spa {
+  font-size: 2.5rem;
+  color: #fff;
+}
+.typed-cursor{
+  font-size: 2.5rem;
+}
+
+/* End Home */
+
+
+/* Start about */
+
+.img-container{
+  width: 100%;
+  position: relative;
+  
+}
+.over-lay{
+  width: 100%;
+  background-color: rgba(7, 7, 7, 0.287);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.list-info li {
+
+  font-size: 18px;
+  font-weight: 600;
+  padding: 5px 0;
+  color: var(--secondColor);
+}
+
+.info-h h3{
+  font-weight: bold;
+  font-size: 23px;
+
+  position: relative;
+}
+
+article p {
+  font-size: 17.5px;
+  color: var(--secondColor);
+}
+
+/* End about */
+
+
+
+/* start footer */
+footer {
+  background-color: #1c416b
+}
+
+/* back to top*/
+
+.back-to-top {
+  display: none;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  background: #0078ff;
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  line-height: 2;
+  font-size: 1.3rem;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: 11;
+}
